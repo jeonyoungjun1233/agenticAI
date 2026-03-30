@@ -1,0 +1,18 @@
+﻿{
+    "hook_name":  "verify-week3-output",
+    "checked_at":  "2026-03-28T20:56:46.1364515+09:00",
+    "output_dir":  "C:\\agenticAI\\practice\\week3\\output",
+    "required_paths":  [
+                           "C:\\agenticAI\\practice\\week3\\output",
+                           "C:\\agenticAI\\practice\\week3\\output\\summary.md",
+                           "C:\\agenticAI\\practice\\week3\\output\\practice3_mcp_result.json"
+                       ],
+    "missing_paths":  [
+
+                      ],
+    "warnings":  [
+
+                 ],
+    "success":  true,
+    "note":  "작업 완료 후 output 생성 여부와 핵심 산출물 존재를 검사하는 예시 hook 결과입니다."
+}

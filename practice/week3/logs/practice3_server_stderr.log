@@ -1,0 +1,10 @@
+2026-03-25 15:15:35,939 - INFO - Processing request of type ListToolsRequest
+2026-03-25 15:15:35,942 - INFO - Processing request of type CallToolRequest
+2026-03-25 15:15:35,942 - INFO - list_markdown_files 호출: directory=docs, limit=5
+2026-03-25 15:15:35,943 - INFO - list_markdown_files 완료: 5개 반환
+2026-03-25 15:15:35,947 - INFO - Processing request of type CallToolRequest
+2026-03-25 15:15:35,947 - INFO - list_markdown_files 호출: directory=../class, limit=5
+2026-03-25 15:15:35,947 - ERROR - directory는 허용된 폴더만 사용할 수 있습니다: docs, output, submit
+2026-03-25 15:15:35,951 - INFO - Processing request of type CallToolRequest
+2026-03-25 15:15:35,951 - INFO - list_markdown_files 호출: directory=docs, limit=0
+2026-03-25 15:15:35,951 - ERROR - limit는 1 이상 20 이하이어야 합니다: 0

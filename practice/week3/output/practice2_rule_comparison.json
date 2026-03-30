@@ -1,0 +1,15 @@
+{
+  "before_path": "C:\\agenticAI\\practice\\week3\\output\\summary_without_rules.md",
+  "after_path": "C:\\agenticAI\\practice\\week3\\output\\summary.md",
+  "differences": [
+    "규칙 전 출력은 단순 요약만 있고 검증 항목이 없다.",
+    "규칙 후 출력은 검증 항목 3개를 먼저 제시한다.",
+    "규칙 후 출력은 확인 필요 섹션과 실행 기록을 포함한다.",
+    "규칙 후 출력은 결과 파일 위치를 비교 가능하도록 명시한다."
+  ],
+  "safer_behavior": [
+    "검증 기준이 명시되어 결과를 점검하기 쉬워졌다.",
+    "불확실성 표기와 실행 기록이 추가되어 검토성이 좋아졌다."
+  ],
+  "generated_at": "2026-03-25T06:04:51.244752Z"
+}

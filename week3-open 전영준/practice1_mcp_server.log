@@ -1,0 +1,7 @@
+2026-03-25 14:55:44,257 - WARNING - OPENWEATHERMAP_API_KEY가 설정되지 않았습니다. .env 파일을 확인하세요.
+2026-03-25 14:55:44,274 - INFO - Processing request of type ListToolsRequest
+2026-03-25 14:55:44,275 - INFO - Processing request of type CallToolRequest
+2026-03-25 14:55:44,275 - INFO - get_current_weather 호출: lat=91.0, lon=126.978, units=metric
+2026-03-25 14:55:44,275 - ERROR - 위도는 -90에서 90 사이여야 합니다: 91.0
+2026-03-25 14:55:44,277 - INFO - Processing request of type CallToolRequest
+2026-03-25 14:55:44,277 - INFO - get_current_weather 호출: lat=37.5665, lon=126.978, units=metric

@@ -1,0 +1,12 @@
+﻿{
+  "name": "week3-plugin-example",
+  "version": "0.1.0",
+  "description": "week3 실습용 plugin 묶음 예시. MCP 설정과 skill을 함께 담는다.",
+  "includes": {
+    "mcp": ".mcp.json",
+    "skills": [
+      "skills/doc-summary/SKILL.md"
+    ]
+  },
+  "note": "이 파일은 특정 벤더 표준이 아니라 week3 수업용 구조 예시다."
+}

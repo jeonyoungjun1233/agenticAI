@@ -1,0 +1,36 @@
+﻿{
+    "plugin_root":  "C:\\agenticAI\\practice\\week3\\plugin\\week3-plugin",
+    "generated_at":  "2026-03-25T15:17:20",
+    "files":  [
+                  {
+                      "FullName":  "C:\\agenticAI\\practice\\week3\\plugin\\week3-plugin\\skills",
+                      "Name":  "skills",
+                      "Length":  null
+                  },
+                  {
+                      "FullName":  "C:\\agenticAI\\practice\\week3\\plugin\\week3-plugin\\.mcp.json",
+                      "Name":  ".mcp.json",
+                      "Length":  243
+                  },
+                  {
+                      "FullName":  "C:\\agenticAI\\practice\\week3\\plugin\\week3-plugin\\plugin.json",
+                      "Name":  "plugin.json",
+                      "Length":  360
+                  },
+                  {
+                      "FullName":  "C:\\agenticAI\\practice\\week3\\plugin\\week3-plugin\\README.md",
+                      "Name":  "README.md",
+                      "Length":  550
+                  },
+                  {
+                      "FullName":  "C:\\agenticAI\\practice\\week3\\plugin\\week3-plugin\\skills\\doc-summary",
+                      "Name":  "doc-summary",
+                      "Length":  null
+                  },
+                  {
+                      "FullName":  "C:\\agenticAI\\practice\\week3\\plugin\\week3-plugin\\skills\\doc-summary\\SKILL.md",
+                      "Name":  "SKILL.md",
+                      "Length":  711
+                  }
+              ]
+}

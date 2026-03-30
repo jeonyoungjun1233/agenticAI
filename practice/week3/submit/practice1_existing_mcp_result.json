@@ -1,0 +1,139 @@
+{
+  "practice": "실습 1: 기존 MCP 서버 연결해서 써 보기",
+  "server": {
+    "name": "chapter4 weather server",
+    "transport": "stdio",
+    "command": "C:\\agenticAI\\.venv\\Scripts\\python.exe",
+    "args": [
+      "C:\\agenticAI\\practice\\week3\\code\\run_chapter4_server_stdio.py"
+    ]
+  },
+  "initialize": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "weather-server",
+      "title": null,
+      "version": "1.26.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": null
+  },
+  "tools": [
+    {
+      "name": "get_current_weather",
+      "title": null,
+      "description": "\n지정된 위치의 현재 날씨를 조회합니다.\n\nArgs:\n    latitude: 위도 (-90 ~ 90)\n    longitude: 경도 (-180 ~ 180)\n    units: 온도 단위 (metric: 섭씨, imperial: 화씨, standard: 켈빈)\n\nReturns:\n    날씨 정보를 포함한 JSON 문자열\n",
+      "inputSchema": {
+        "properties": {
+          "latitude": {
+            "title": "Latitude",
+            "type": "number"
+          },
+          "longitude": {
+            "title": "Longitude",
+            "type": "number"
+          },
+          "units": {
+            "default": "metric",
+            "title": "Units",
+            "type": "string"
+          }
+        },
+        "required": [
+          "latitude",
+          "longitude"
+        ],
+        "title": "get_current_weatherArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "get_current_weatherOutput",
+        "type": "object"
+      },
+      "icons": null,
+      "annotations": null,
+      "meta": null,
+      "execution": null
+    }
+  ],
+  "calls": [
+    {
+      "case": "invalid_latitude",
+      "input": {
+        "latitude": 91,
+        "longitude": 126.978,
+        "units": "metric"
+      },
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"error\": \"위도는 -90에서 90 사이여야 합니다: 91.0\"}",
+          "annotations": null,
+          "meta": null
+        }
+      ],
+      "parsed_text": {
+        "error": "위도는 -90에서 90 사이여야 합니다: 91.0"
+      }
+    },
+    {
+      "case": "missing_api_key",
+      "input": {
+        "latitude": 37.5665,
+        "longitude": 126.978,
+        "units": "metric"
+      },
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"error\": \"OPENWEATHERMAP_API_KEY 환경 변수가 설정되지 않았습니다.\"}",
+          "annotations": null,
+          "meta": null
+        }
+      ],
+      "parsed_text": {
+        "error": "OPENWEATHERMAP_API_KEY 환경 변수가 설정되지 않았습니다."
+      }
+    }
+  ],
+  "verification": [
+    "tools/list 결과에 get_current_weather 도구가 노출되는지 확인",
+    "잘못된 위도 입력에서 서버 검증 메시지가 반환되는지 확인",
+    "유효 좌표지만 API 키가 없는 경우 환경 변수 오류가 반환되는지 확인"
+  ],
+  "artifacts": {
+    "result_json": "C:\\agenticAI\\practice\\week3\\data\\output\\practice1_existing_mcp_result.json",
+    "summary_md": "C:\\agenticAI\\practice\\week3\\docs\\practice1-summary.md",
+    "stderr_log": "C:\\agenticAI\\practice\\week3\\logs\\practice1_server_stderr.log",
+    "server_log": "C:\\agenticAI\\practice\\chapter4\\logs\\mcp_server.log"
+  }
+}

@@ -1,0 +1,12 @@
+﻿{
+  "name": "week3-helper",
+  "description": "Week 3 Copilot CLI plugin practice bundle",
+  "version": "1.0.0",
+  "includes": {
+    "skills": [
+      "skills/doc-summary/SKILL.md"
+    ],
+    "mcp": ".mcp.json"
+  },
+  "note": "수업용 예시 디렉토리입니다. 공식 배포 포맷 설명용으로 사용합니다."
+}

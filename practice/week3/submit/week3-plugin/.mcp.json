@@ -1,0 +1,11 @@
+﻿{
+  "servers": {
+    "week3-minimal-server": {
+      "type": "stdio",
+      "command": "C:/agenticAI/.venv/Scripts/python.exe",
+      "args": [
+        "C:/agenticAI/practice/week3/code/practice3_minimal_mcp_server.py"
+      ]
+    }
+  }
+}
