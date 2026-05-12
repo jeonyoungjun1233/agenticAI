@@ -30,3 +30,8 @@ checklists/
 schema/
 CLAUDE.md
 README.md
+
+# Keep multi-agent submission documents trackable even with broad local ignores.
+!멀티에이전트 프로젝트/**/README.md
+!멀티에이전트 프로젝트/**/context.md
+!멀티에이전트 프로젝트/**/todo.md

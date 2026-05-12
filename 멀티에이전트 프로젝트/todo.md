@@ -11,6 +11,10 @@
 - [x] Gemini 전용 작업 지침을 `GEMINI.md`에 작성
 - [x] 프로젝트 배경과 제약 조건을 `context.md`에 작성
 - [x] 강의/제출 파일명 오타 대응용 `contetxt.md` 작성
+- [x] Week 11 규칙 기반 에이전트 모듈을 `week11-suika-agent` 하위 폴더로 추가
+- [x] 상위 문서와 하위 모듈의 같은 이름 파일이 서로 덮어쓰이지 않게 구조 분리
+- [x] `python -m py_compile .\week11-suika-agent\my_agent.py` 문법 검사 통과
+- [x] `python .\week11-suika-agent\my_agent.py` 실행 후 `agent_output.md` 갱신
 - [x] 게임 실행 파일인 `src`, `public`, `index.html`, `package.json`은 수정하지 않음
 
 ## 에이전트별 역할
@@ -34,5 +38,6 @@
 - [ ] 게임 화면, 조작, 점수, 소리, 병합 규칙이 기존과 동일한가?
 - [ ] 제출용 문서가 게임 코드와 분리되어 있는가?
 - [ ] `AGENTS.md`, `GEMINI.md`, `context.md`, `contetxt.md`, `todo.md`가 모두 있는가?
+- [ ] `week11-suika-agent` 안에 `my_agent.py`, `README.md`, `vibe_prompt.md`, `agent_output.md`가 있는가?
 - [ ] 문서에 멀티에이전트 역할과 협업 흐름이 명확한가?
 - [ ] GitHub에 올릴 때 불필요한 `node_modules`가 포함되지 않는가?

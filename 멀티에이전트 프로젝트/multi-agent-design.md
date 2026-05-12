@@ -284,6 +284,11 @@ multi-agent-project/
   context.md               프로젝트 배경과 제약 조건
   todo.md                  작업 진행 상태
   multi-agent-design.md    제출용 멀티에이전트 설계도
+  week11-suika-agent/      규칙 기반 Week 11 실행 에이전트
+    my_agent.py            로컬 문서를 읽어 보고서를 만드는 Python 에이전트
+    README.md              모듈 실행 방법
+    vibe_prompt.md         에이전트 생성 프롬프트
+    agent_output.md        실행 결과 보고서
 ```
 
 공유 메모리에 반드시 남겨야 할 핵심 규칙은 다음과 같다.
@@ -292,6 +297,7 @@ multi-agent-project/
 - 문서 작업은 `multi-agent-project` 폴더 안에서만 진행한다.
 - 각 에이전트는 자신의 역할과 산출물을 명확히 남긴다.
 - 최종 검토 단계에서 변경 파일 목록을 확인한다.
+- 하위 모듈의 같은 이름 문서는 상위 문서를 덮어쓰지 않고 독립 공유 메모리로 사용한다.
 
 ## 11. 최종 판단
 

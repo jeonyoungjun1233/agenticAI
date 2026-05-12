@@ -36,6 +36,17 @@ Matter.js와 Vite로 만들어진 웹 수박게임을 유지하면서, 여러 AI
 - 테스트 시나리오 작성
 - 제출 문서 정리
 
+## 추가된 Week 11 실행 에이전트
+
+`week11-suika-agent` 폴더는 Week 11 과제용 규칙 기반 에이전트 모듈이다. 상위 멀티에이전트 문서와 파일명이 겹치는 `AGENTS.md`, `GEMINI.md`, `context.md`, `todo.md`를 하위 폴더 안에 독립적으로 보관해 충돌을 피한다.
+
+이 모듈의 핵심 파일은 다음과 같다.
+
+- `week11-suika-agent/my_agent.py`: 외부 패키지 없이 실행되는 규칙 기반 에이전트
+- `week11-suika-agent/vibe_prompt.md`: 첫 버전을 만들 때 사용한 프롬프트
+- `week11-suika-agent/agent_output.md`: 실행 결과 보고서
+- `week11-suika-agent/README.md`: 모듈 실행 방법과 파일 구성 설명
+
 ## 가장 중요한 제약 조건
 
 학교 과제 제출 목적이므로 게임 동작은 변경하지 않는다. 이번 작업의 범위는 문서와 폴더 구조 작성으로 제한한다.
@@ -52,6 +63,7 @@ Matter.js와 Vite로 만들어진 웹 수박게임을 유지하면서, 여러 AI
 수정 가능 대상:
 
 - `multi-agent-project` 폴더 안의 문서 파일
+- `multi-agent-project/week11-suika-agent` 폴더 안의 Week 11 에이전트 파일
 
 ## 작업 원칙
 
